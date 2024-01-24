@@ -13,7 +13,7 @@ window.addEventListener('click' , function (event) {
             price: card.querySelector('.price__currency').innerText,
             counter: card.querySelector('[data-counter]').innerText
         }
-        const cartItemHtml = `<div class="cart-item" data-id="02">
+        const cartItemHtml = `<div class="cart-item" data-id="${productInfo.id}">
         <div class="cart-item__top">
             <div class="cart-item__img">
                 <img src="${productInfo.imgSrc}" alt="">
@@ -49,7 +49,7 @@ window.addEventListener('click' , function (event) {
             counterEl.innerText = parseInt(counterEl.innerText) + parseInt(productInfo.counter)
         }
         else {
-            const cartItemHtml = `<div class="cart-item" data-id="02">
+            const cartItemHtml = `<div class="cart-item" data-id="${productInfo.id}">
         <div class="cart-item__top">
             <div class="cart-item__img">
                 <img src="${productInfo.imgSrc}" alt="">
